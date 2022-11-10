@@ -28,7 +28,7 @@ export default function Post({totalLikes, data}) {
       <h3>{data.titulo} </h3>
       <p>{data.texto}</p>
       <button onClick={darLike}>&#128077;</button>
-      <h5>{likes <= 10 ? likes : "Mas de 10 likes"}</h5>
+      <h5>{likes <= 10 ? "likes " + likes : "Mas de 10 likes"}</h5>
     </div>
   )
 }
